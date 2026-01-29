@@ -1,8 +1,7 @@
 import json
 import os
 import threading
-import socket # Импортируем библиотеку socket
-
+import socket 
 from Protocol import Protocol
 
 
@@ -23,9 +22,9 @@ lock = threading.Lock()
 
 # Server
 
-server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # Создаем сокет
-server_socket.bind(("0.0.0.0", 9000)) # Указываем какой порт слушает сервер
-server_socket.listen() # Сервер слушает
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
+server_socket.bind(("0.0.0.0", 9000)) 
+server_socket.listen() 
 
 print("Server started...")
 
@@ -37,7 +36,7 @@ def handle_client(client_socket, address):
         msg_type, args = protocol.get_msg()
         if not msg_type:
             print("Client disconnected")
-            break  # клиент отключился
+            break  
 
         try:
             if msg_type == "signup":
@@ -80,7 +79,7 @@ def handle_client(client_socket, address):
 
 
         except IndexError:
-            protocol.send_msg("error", "Некорректные данные")
+            protocol.send_msg("error", "incorrect data")
             print("Что-то не так")
 
     client_socket.close()
@@ -90,3 +89,4 @@ while True:
 
     client_socket, address = server_socket.accept()
     threading.Thread(target=handle_client, args=(client_socket, address), daemon=True).start()
+
