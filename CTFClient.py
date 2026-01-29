@@ -6,7 +6,7 @@ from Protocol import Protocol
 
 # Functions
 
-def show_frame(frame):  # Откроет указанный фрейм
+def show_frame(frame):
     frame.tkraise()
 
 def send_signup():
@@ -64,8 +64,8 @@ def listen_server():
 
 # Client part
 
-client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # Создаем клиент
-client_socket.connect(("127.0.0.1", 9000)) # Подключаем клиент к указанному порту и хосту (серверу)
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
+client_socket.connect(("127.0.0.1", 9000)) 
 
 protocol = Protocol(client_socket)
 
@@ -178,3 +178,4 @@ title.place(relx=0.5, y=100, anchor=CENTER)
 
 show_frame(log_in_frame)
 root.mainloop()
+
