@@ -70,9 +70,8 @@ def handle_client(client_socket, address):
                 nickname = args[0]
                 password = args[1]
 
-
                 if any(user["nickname"] == nickname for user in users):
-                    protocol.send_msg("error", "Пользователь уже существует")
+                    protocol.send_msg("error", "User already exists")
                 else:
                     new_user = {
                         "nickname": nickname,
@@ -85,8 +84,10 @@ def handle_client(client_socket, address):
 
                     with open(USERS_FILE, "w", encoding="utf-8") as f:
                         json.dump(users, f, ensure_ascii=False, indent=4)
-                    protocol.send_msg("success", "Регистрация успешна")
-                    print("Регистрация:", nickname, password)
+
+                    protocol.send_msg("success", "Registration successful")
+                    print("Registration:", nickname, password)
+
 
             elif msg_type == "login":
                 nickname = args[0]
@@ -97,10 +98,10 @@ def handle_client(client_socket, address):
                 if user and user["password"] == password:
                     connected_users[client_socket] = nickname
                     protocol.send_msg("success", "Login is done")
-                    print("Пользователь вошел:", nickname)
+                    print("User logged in:", nickname)
 
                 else:
-                    protocol.send_msg("error", "Неверный логин или пароль")
+                    protocol.send_msg("error", "Invalid username or password")
 
             elif msg_type == "find_match":
                 if len(waiting_players) == 0:
@@ -177,13 +178,9 @@ def handle_client(client_socket, address):
 
 
 
-
-
-
-
         except IndexError:
-            protocol.send_msg("error", "Некорректные данные")
-            print("Что-то не так")
+            protocol.send_msg("error", "Invalid data")
+            print("Something went wrong")
 
     client_socket.close()
 

@@ -121,7 +121,7 @@ def handle_task_card(args):
 def handle_task_page_opened(args):
     task_data = json.loads(args[0])
 
-    print("Задача открыта:", task_data["title"])
+    print("Task is opened:", task_data["title"])
 
     TaskPage(task_data)
 
@@ -129,7 +129,7 @@ def handle_task_page_opened(args):
 def handle_task_data_locked(args):
     task_id = args[0]
 
-    print(f"Задача {task_id} закрыта")
+    print(f"Task {task_id} is closed")
 
 def handle_score(args):
     score = Label(scoreboard_content, text=f"Your score: {args[0]}", fg="white", bg="black", font=("Consolas", 24, "bold"),
@@ -220,7 +220,7 @@ error_label1 = Label(log_in_frame, text="Nickname or password are wrong", fg="re
 
 # sign_up_frame
 
-title1 = Label(sign_up_frame, text="CTF: Attack the City", fg="white", bg="#0f172a", font=("Consolas", 36, "bold"))
+title1 = Label(sign_up_frame, text="CTF", fg="white", bg="#0f172a", font=("Consolas", 36, "bold"))
 title1.place(relx=0.5, y=100, anchor=CENTER)
 
 Label(sign_up_frame, text="Sign up", fg="white", bg="#0f172a", font=("Consolas", 24)).place(relx=0.5, y=200, anchor=CENTER)
@@ -422,15 +422,14 @@ class TaskCard:
         self.type_label.config(bg="#333333", fg="white")
         self.solves.config(bg="#333333", fg="white")
 
-
     def open_task(self, event):
         task_id = self.info["id"]
 
-        print(f"Запрос задачи {task_id}")
+        print(f"Requesting task {task_id}")
 
         protocol.send_msg("get_task_page", str(task_id))
 
-        print("Запрос отправлен")
+        print("Request sent")
 
 
 
@@ -468,10 +467,10 @@ class TaskPage():
 
         def download_folder():
             downloads = os.path.join(os.path.expanduser("~"), "Downloads")
-            source_file = self.info["files"][0]  # например "CTF_task0.zip"
+            source_file = self.info["files"][0]
             destination = os.path.join(downloads, source_file)
             shutil.copy(source_file, destination)
-            print(f"Файл {source_file} скопирован в {destination}")
+            print(f"File {source_file} copied to {destination}")
 
         self.download = Label(self.frame, text=self.info["files"], fg="#66ccff", bg="#0f172a", font=("Consolas", 14), cursor="hand2")
 
@@ -494,11 +493,9 @@ class TaskPage():
         self.submit = Button(self.frame, text="Submit", fg="white", bg="#020617", font=("Consolas", 14, "bold"), command=self.submit_flag)
         self.submit.place(x=700, y=600)
 
-
-
     def submit_flag(self):
         user_flag = self.enter_flag.get()
-        print(f"Флаг пользователя: {user_flag}")
+        print(f"User flag: {user_flag}")
 
     def close(self):
         self.frame.destroy()
