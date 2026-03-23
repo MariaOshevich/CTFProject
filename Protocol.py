@@ -3,7 +3,7 @@ class Protocol:
 
     LENGTH_FIELD_SIZE = 2
     PORT = 8820
-    #def Protocol(sock):
+
     def __init__(self, sock):
         self.sock = sock
 

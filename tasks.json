@@ -1,0 +1,79 @@
+[
+    {
+        "id": 0,
+        "title": "Zero task",
+        "difficulty": "Easy",
+        "type": "Reverse Engeneering",
+        "points": "50 points",
+        "solves": "67 solves",
+        "description": "Find the hidden flag in the binary.",
+        "files": ["CTF_task0.zip"],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 1,
+        "title": "First task",
+        "difficulty": "Medium",
+        "type": "Crypto",
+        "points": "80 points",
+        "solves": "34 solves",
+        "description": "Find the hidden flag in the binary.",
+        "files": ["CTF_task0.zip"],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 2,
+        "title": "Second task",
+        "difficulty": "Hard",
+        "type": "Web Exploit",
+        "points": "120 points",
+        "solves": "12 solves",
+        "description": "Find the hidden flag in the binary.",
+        "files": ["CTF_task0.zip"],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 3,
+        "title": "Third task",
+        "difficulty": "Easy",
+        "type": "Forensics",
+        "points": "40 points",
+        "solves": "50 solves",
+        "description": "Find the hidden flag in the binary.",
+        "files": ["CTF_task0.zip"],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 4,
+        "title": "Fourth task",
+        "difficulty": "Medium",
+        "type": "Pwn",
+        "points": "90 points",
+        "solves": "22 solves",
+        "description": "Find the hidden flag in the binary.",
+        "files": ["CTF_task0.zip"],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 5,
+        "title": "Fifth task",
+        "difficulty": "Hard",
+        "type": "Reverse",
+        "points": "150 points",
+        "solves": "10 solves",
+        "description": "Find the hidden flag in the binary.",
+        "files": ["CTF_task0.zip"],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 6,
+        "title": "Sixth task",
+        "difficulty": "Hard",
+        "type": "Reverse",
+        "points": "150 points",
+        "solves": "10 solves",
+        "description": "Find the hidden flag in the binary.",
+        "files": ["CTF_task0.zip"],
+        "flag": "this_is_flag"
+    }
+]

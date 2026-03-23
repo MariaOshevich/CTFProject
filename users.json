@@ -1,5 +1,42 @@
-{
-    "Kara": "1234",
-    "Connor": "1234",
-    "Markus": "0987"
-}
+[
+    {
+        "nickname": "Kara",
+        "password": "1234",
+        "score": 0,
+        "opened_tasks": [],
+        "solved_tasks": []
+    },
+    {
+        "nickname": "Connor",
+        "password": "1234",
+        "score": 50,
+        "opened_tasks": [
+            0,
+            1
+        ],
+        "solved_tasks": [
+            0
+        ]
+    },
+    {
+        "nickname": "Markus",
+        "password": "0987",
+        "score": 120,
+        "opened_tasks": [
+            0,
+            2,
+            3
+        ],
+        "solved_tasks": [
+            0,
+            2
+        ]
+    },
+    {
+        "nickname": "T",
+        "password": "1",
+        "score": 0,
+        "opened_tasks": [],
+        "solved_tasks": []
+    }
+]
