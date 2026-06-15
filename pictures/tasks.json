@@ -1,0 +1,442 @@
+[
+    {
+        "id": 0,
+        "title": "Task-0",
+        "difficulty": "Easy",
+        "type": "Encoding",
+        "points": 40,
+        "reduced_points": 30,
+        "solves": 87,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag_hash": "b1886fd2262337efba30ae8dcd8d460944df345cb23b6cae1f7103b7669ea35d",
+        "flag_salt": "a4b7c1d3e9f2a6b8c4d7e1f3a5b2c8d4"
+    },
+    {
+        "id": 1,
+        "title": "MicCheck-1",
+        "difficulty": "Medium",
+        "type": "Reverse",
+        "points": 80,
+        "reduced_points": 60,
+        "solves": 36,
+        "description": "Find the hidden flag in the code.",
+        "files": [
+            "CTF_task1.zip"
+        ],
+        "flag_hash": "b1886fd2262337efba30ae8dcd8d460944df345cb23b6cae1f7103b7669ea35d",
+        "flag_salt": "a4b7c1d3e9f2a6b8c4d7e1f3a5b2c8d4"
+    },
+    {
+        "id": 30,
+        "title": "MicCheck-11111",
+        "difficulty": "Medium",
+        "type": "Reverse",
+        "points": 80,
+        "reduced_points": 60,
+        "solves": 39,
+        "description": "Find the hidden flag in the code.",
+        "files": [
+            "CTF_task1.zip"
+        ],
+        "flag_hash": "8dddaeef67015362c6637e1cee971b96698eaa1e26efa00f10efb8338deb01f4",
+        "flag_salt": "a4b7c1d3e9f2a6b8c4d7e1f3a5b2c8d4"
+    },
+    {
+        "id": 2,
+        "title": "Task-2",
+        "difficulty": "Hard",
+        "type": "Encoding",
+        "points": 120,
+        "reduced_points": 90,
+        "solves": 27,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag_hash": "b1886fd2262337efba30ae8dcd8d460944df345cb23b6cae1f7103b7669ea35d",
+        "flag_salt": "a4b7c1d3e9f2a6b8c4d7e1f3a5b2c8d4"
+    },
+    {
+        "id": 3,
+        "title": "MicCheck-3",
+        "difficulty": "Easy",
+        "type": "Reverse",
+        "points": 40,
+        "reduced_points": 30,
+        "solves": 51,
+        "description": "Find the hidden flag in the code.",
+        "files": [
+            "CTF_task3.zip"
+        ],
+        "flag_hash": "d35d36a5ae9c9c9de988df8a9612ad8bf2975de37966cfa3709a43c107854a1c",
+        "flag_salt": "a4b7c1d3e9f2a6b8c4d7e1f3a5b2c8d4"
+    },
+    {
+        "id": 4,
+        "title": "Task-4",
+        "difficulty": "Medium",
+        "type": "Encoding",
+        "points": 80,
+        "reduced_points": 60,
+        "solves": 38,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag_hash": "b1886fd2262337efba30ae8dcd8d460944df345cb23b6cae1f7103b7669ea35d",
+        "flag_salt": "a4b7c1d3e9f2a6b8c4d7e1f3a5b2c8d4"
+    },
+    {
+        "id": 5,
+        "title": "Task-5",
+        "difficulty": "Hard",
+        "type": "Reverse",
+        "points": 120,
+        "reduced_points": 90,
+        "solves": 18,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 6,
+        "title": "Task-6",
+        "difficulty": "Hard",
+        "type": "Reverse",
+        "points": 120,
+        "reduced_points": 90,
+        "solves": 25,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 7,
+        "title": "Task-7",
+        "difficulty": "Hard",
+        "type": "Encoding",
+        "points": 120,
+        "reduced_points": 90,
+        "solves": 14,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 8,
+        "title": "MicCheck-8",
+        "difficulty": "Easy",
+        "type": "Reverse",
+        "points": 40,
+        "reduced_points": 30,
+        "solves": 71,
+        "description": "Find the hidden flag in the code.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "MicCheck_h4x"
+    },
+    {
+        "id": 9,
+        "title": "Task-9",
+        "difficulty": "Medium",
+        "type": "Encoding",
+        "points": 80,
+        "reduced_points": 60,
+        "solves": 48,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 10,
+        "title": "MicCheck-10",
+        "difficulty": "Easy",
+        "type": "Reverse",
+        "points": 40,
+        "reduced_points": 30,
+        "solves": 53,
+        "description": "Find the hidden flag in the code.",
+        "files": [
+            "CTF_task10.zip"
+        ],
+        "flag": "4_pointskomne"
+    },
+    {
+        "id": 11,
+        "title": "Task-11",
+        "difficulty": "Medium",
+        "type": "Encoding",
+        "points": 80,
+        "reduced_points": 60,
+        "solves": 24,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 12,
+        "title": "Fifth task",
+        "difficulty": "Hard",
+        "type": "Reverse",
+        "points": 120,
+        "reduced_points": 90,
+        "solves": 12,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 13,
+        "title": "Sixth task",
+        "difficulty": "Hard",
+        "type": "Reverse",
+        "points": 120,
+        "reduced_points": 90,
+        "solves": 12,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 14,
+        "title": "Sixth task",
+        "difficulty": "Hard",
+        "type": "Reverse",
+        "points": 120,
+        "reduced_points": 90,
+        "solves": 11,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 15,
+        "title": "Sixth task",
+        "difficulty": "Hard",
+        "type": "Reverse",
+        "points": 120,
+        "reduced_points": 90,
+        "solves": 12,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 16,
+        "title": "Zero task",
+        "difficulty": "Easy",
+        "type": "Reverse Engeneering",
+        "points": 40,
+        "reduced_points": 30,
+        "solves": 70,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 17,
+        "title": "First task",
+        "difficulty": "Medium",
+        "type": "Crypto",
+        "points": 80,
+        "reduced_points": 60,
+        "solves": 38,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 18,
+        "title": "Second task",
+        "difficulty": "Hard",
+        "type": "Web Exploit",
+        "points": 120,
+        "reduced_points": 90,
+        "solves": 13,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 19,
+        "title": "Third task",
+        "difficulty": "Easy",
+        "type": "Forensics",
+        "points": 40,
+        "reduced_points": 30,
+        "solves": 61,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 20,
+        "title": "Fourth task",
+        "difficulty": "Medium",
+        "type": "Pwn",
+        "points": 80,
+        "reduced_points": 60,
+        "solves": 24,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 21,
+        "title": "Fifth task",
+        "difficulty": "Hard",
+        "type": "Reverse",
+        "points": 120,
+        "reduced_points": 90,
+        "solves": 11,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 22,
+        "title": "Sixth task",
+        "difficulty": "Hard",
+        "type": "Reverse",
+        "points": 120,
+        "reduced_points": 90,
+        "solves": 12,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 23,
+        "title": "Sixth task",
+        "difficulty": "Hard",
+        "type": "Reverse",
+        "points": 120,
+        "reduced_points": 90,
+        "solves": 13,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 24,
+        "title": "Zero task",
+        "difficulty": "Easy",
+        "type": "Reverse Engeneering",
+        "points": 40,
+        "reduced_points": 30,
+        "solves": 68,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 25,
+        "title": "First task",
+        "difficulty": "Medium",
+        "type": "Crypto",
+        "points": 80,
+        "reduced_points": 60,
+        "solves": 36,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 26,
+        "title": "Second task",
+        "difficulty": "Hard",
+        "type": "Web Exploit",
+        "points": 120,
+        "reduced_points": 90,
+        "solves": 12,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 27,
+        "title": "Third task",
+        "difficulty": "Easy",
+        "type": "Forensics",
+        "points": 40,
+        "reduced_points": 30,
+        "solves": 52,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 28,
+        "title": "Fourth task",
+        "difficulty": "Medium",
+        "type": "Pwn",
+        "points": 80,
+        "reduced_points": 60,
+        "solves": 23,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    },
+    {
+        "id": 29,
+        "title": "Fifth task",
+        "difficulty": "Hard",
+        "type": "Reverse",
+        "points": 120,
+        "reduced_points": 90,
+        "solves": 10,
+        "description": "Find the hidden flag in the binary.",
+        "files": [
+            "CTF_task0.zip"
+        ],
+        "flag": "this_is_flag"
+    }
+]

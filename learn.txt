@@ -1,0 +1,28 @@
+What is CTF (Capture The Flag)
+
+CTF (Capture The Flag) is a cybersecurity competition format in which participants solve technical tasks related to code analysis, hacking, cryptography, networking, and vulnerability discovery. The main goal is to find a special secret string called a “flag.” For each found flag, the team or player receives points. The winner is the one who scores the most points within a given time.
+
+The name Capture The Flag comes from the traditional team game of the same name. In the physical game, teams try to steal the opponent’s flag while defending their own. In cybersecurity, the principle is similar: instead of a real flag, a hidden string is used, such as:
+
+flag{example_of_flag}
+
+To obtain this flag, participants must investigate a program, file, website, network service, or system and find a way to extract hidden data.
+
+Types of CTF Challenges
+
+CTF includes many types of tasks. The most common categories are:
+
+• Reverse Engineering (code and program analysis)
+• Encoding / Cryptography (encoding and encryption)
+• Forensics (file analysis and digital traces)
+• Networking (network-based tasks)
+• OSINT (open-source intelligence gathering)
+
+In each challenge, a flag is hidden. To retrieve it, players analyze code, look for errors, decode data, or study program behavior.
+
+In my project, I provide users with the ability to solve two types of tasks: Reverse (code analysis) and Encoding / Cryptography (encoding and encryption).
+
+Example of a Simple CTF Challenge
+
+A player receives the following Python code:
+

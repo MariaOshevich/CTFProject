@@ -1,0 +1,105 @@
+Welcome to my CTF platform! Here is a guide on how to use it.
+
+Main Menu
+
+Start
+
+To start the game, press the Start button in the main menu. After pressing it, the player is moved to the waiting room. At this stage, the player can still leave the queue, but once the platform finds a second player and the match begins, leaving the game will no longer be possible.
+
+During the match, the player can see:
+
+Tools
+A 10-minute timer
+Their own score
+The opponent’s score
+
+The player also receives a list of 5 challenges with different difficulty levels:
+
+2 easy challenges
+2 medium challenges
+1 hard challenge
+
+The number of points depends on the challenge difficulty:
+
+Easy — 40 points
+Medium — 80 points
+Hard — 120 points
+
+The main goal is to solve as many challenges as possible within 10 minutes. The player with the highest score wins. If both players have the same number of points, the winner is the player who reached that score faster.
+
+When the timer ends, the match automatically finishes and both players are shown the results screen.
+
+Challenges
+
+On a challenge card, the player can see:
+
+Challenge title
+Challenge category
+Difficulty
+Points awarded for solving it
+Number of players who solved it
+
+After opening a challenge, a separate window appears containing:
+
+The challenge description
+Attached files
+A flag input field
+What is a flag?
+
+A flag is a special string that the player must find in order to prove that the challenge has been solved. A flag usually looks something like:
+
+flag(example)
+
+or follows a similar format.
+
+After finding the flag, the player must enter it into the input field and press the Submit button. If the flag is correct, the player receives points for the challenge.
+
+The same challenge cannot be solved twice.
+
+Learn
+
+By pressing the Learn button in the main menu, the player can go through a short introduction to the basics of CTF competitions. The tutorial explains how challenges work, what flags are, and which tools can be used for solving different categories of tasks.
+
+After completing the tutorial, the player will better understand the platform and the basics of cybersecurity.
+
+Challenges Library
+
+The Challenges page contains the platform’s full challenge library.
+
+At the beginning, all challenges are locked. To unlock new challenges, the player must participate in matches against other players. Every challenge that appears during a match is automatically unlocked in the library.
+
+If the player does not manage to solve a challenge during the match, they can return to it later on the Challenges page and solve it without any time limit. However, solving challenges outside of matches awards fewer points.
+
+Points for solving challenges in the library:
+
+Easy — 30 points
+Medium — 60 points
+Hard — 90 points
+
+This system allows players to continue learning and improving their skills even after matches are over.
+
+Scoreboard
+
+On the Scoreboard page, the player can see:
+
+Their total earned points
+Personal statistics
+The global leaderboard with all players
+
+The leaderboard updates automatically as players complete challenges and finish matches.
+
+Profile
+
+In the Profile section, the player can:
+
+Log out of their account
+Delete their account
+
+
+
+
+
+
+
+
+

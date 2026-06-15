@@ -2,40 +2,209 @@
     {
         "nickname": "Kara",
         "password": "1234",
-        "score": 0,
+        "score": 1170,
+        "opened_rounds": [],
         "opened_tasks": [],
         "solved_tasks": []
     },
     {
         "nickname": "Connor",
         "password": "1234",
-        "score": 50,
+        "score": 720,
+        "opened_rounds": [
+            3,
+            5,
+            2,
+            4,
+            6
+        ],
         "opened_tasks": [
-            0,
-            1
+            10,
+            11,
+            12,
+            13,
+            14,
+            20,
+            21,
+            22,
+            23,
+            24,
+            5,
+            6,
+            7,
+            8,
+            9,
+            15,
+            16,
+            17,
+            18,
+            19,
+            25,
+            26,
+            27,
+            28,
+            29
         ],
         "solved_tasks": [
-            0
+            12
         ]
     },
     {
         "nickname": "Markus",
         "password": "0987",
-        "score": 120,
-        "opened_tasks": [
-            0,
+        "score": 480,
+        "opened_rounds": [],
+        "opened_tasks": [],
+        "solved_tasks": []
+    },
+    {
+        "nickname": "kazah",
+        "password": "123456",
+        "score": 240,
+        "opened_rounds": [],
+        "opened_tasks": [],
+        "solved_tasks": []
+    },
+    {
+        "nickname": "Mari",
+        "password": "1234",
+        "score": 400,
+        "opened_rounds": [
+            3,
+            5,
             2,
-            3
+            4,
+            6
+        ],
+        "opened_tasks": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            20,
+            21,
+            22,
+            23,
+            24,
+            5,
+            6,
+            7,
+            8,
+            9,
+            15,
+            16,
+            17,
+            18,
+            19,
+            25,
+            26,
+            27,
+            28,
+            29
         ],
         "solved_tasks": [
-            0,
-            2
+            28
         ]
     },
     {
-        "nickname": "T",
-        "password": "1",
+        "nickname": "Maria1234",
+        "password": "1234",
         "score": 0,
+        "opened_rounds": [],
+        "opened_tasks": [],
+        "solved_tasks": []
+    },
+    {
+        "nickname": "Tanya",
+        "password": "Maria1234#",
+        "score": 0,
+        "opened_rounds": [],
+        "opened_tasks": [],
+        "solved_tasks": []
+    },
+    {
+        "nickname": "Maria",
+        "password_hash": "4b9ba8b381a65e714b6339b2f476efd97ae7b791ea40d49050830eac52f06e79",
+        "salt": "286e356292943d8a35c58ee2bea706c4",
+        "score": 580,
+        "opened_rounds": [
+            2,
+            6,
+            5
+        ],
+        "opened_tasks": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            25,
+            26,
+            27,
+            28,
+            29,
+            20,
+            21,
+            22,
+            23,
+            24
+        ],
+        "solved_tasks": [
+            5,
+            9
+        ]
+    },
+    {
+        "nickname": "Reva",
+        "password_hash": "6fa9d0961e2a9379115754cc1c99897c56a460edf05870512e47aa66d54d09f9",
+        "salt": "98803e55d5e561dfd6ccc138f4763dcb",
+        "score": 0,
+        "opened_rounds": [
+            3,
+            4,
+            6,
+            5
+        ],
+        "opened_tasks": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            25,
+            26,
+            27,
+            28,
+            29,
+            20,
+            21,
+            22,
+            23,
+            24
+        ],
+        "solved_tasks": []
+    },
+    {
+        "nickname": "Reva123",
+        "password_hash": "915910c0b79e037a3cd8e4ac6fd5b6f23d5714dac1cdbe6d8143f5ecda819417",
+        "salt": "f383e6dbf58aea436c573f8c89128970",
+        "score": 0,
+        "opened_rounds": [],
+        "opened_tasks": [],
+        "solved_tasks": []
+    },
+    {
+        "nickname": "Reva67",
+        "password_hash": "ce24b6db2d7cb0704812b372e21640576e013dda893f917dcdd31ee9bd5b7870",
+        "salt": "d81301a16f2d0a8c7af5753ff9064552",
+        "score": 0,
+        "opened_rounds": [],
         "opened_tasks": [],
         "solved_tasks": []
     }

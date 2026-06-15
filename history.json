@@ -1,0 +1,231 @@
+{
+    "T": [
+        {
+            "opponent": "Q",
+            "winner": "T",
+            "my_score": 40,
+            "enemy_score": 0,
+            "time": 180
+        },
+        {
+            "opponent": "Q",
+            "winner": "T",
+            "my_score": 40,
+            "enemy_score": 0,
+            "time": 180
+        },
+        {
+            "opponent": "Q",
+            "winner": "T",
+            "my_score": 80,
+            "enemy_score": 0,
+            "time": 180
+        },
+        {
+            "opponent": "Q",
+            "winner": "T",
+            "my_score": 240,
+            "enemy_score": 0,
+            "time": 180
+        },
+        {
+            "opponent": "Q",
+            "winner": "Q",
+            "my_score": 80,
+            "enemy_score": 120,
+            "time": 180
+        },
+        {
+            "opponent": "Q",
+            "winner": "Q",
+            "my_score": 0,
+            "enemy_score": 0,
+            "time": 15
+        }
+    ],
+    "Q": [
+        {
+            "opponent": "T",
+            "winner": "T",
+            "my_score": 0,
+            "enemy_score": 40,
+            "time": 180
+        },
+        {
+            "opponent": "T",
+            "winner": "T",
+            "my_score": 0,
+            "enemy_score": 80,
+            "time": 180
+        },
+        {
+            "opponent": "T",
+            "winner": "T",
+            "my_score": 0,
+            "enemy_score": 240,
+            "time": 180
+        },
+        {
+            "opponent": "T",
+            "winner": "Q",
+            "my_score": 120,
+            "enemy_score": 80,
+            "time": 180
+        },
+        {
+            "opponent": null,
+            "winner": "Draw",
+            "my_score": 0,
+            "enemy_score": 0,
+            "time": 180
+        },
+        {
+            "opponent": "T",
+            "winner": "Q",
+            "my_score": 0,
+            "enemy_score": 0,
+            "time": 15
+        }
+    ],
+    "Connor": [
+        {
+            "opponent": "T",
+            "winner": "Connor",
+            "my_score": 120,
+            "enemy_score": 0,
+            "time": 180
+        },
+        {
+            "opponent": "Maria",
+            "winner": "Connor",
+            "my_score": 120,
+            "enemy_score": 0,
+            "time": 34
+        },
+        {
+            "opponent": "Maria",
+            "winner": "Connor",
+            "my_score": 0,
+            "enemy_score": 0,
+            "time": 20
+        },
+        {
+            "opponent": "Maria",
+            "winner": "Connor",
+            "my_score": 0,
+            "enemy_score": 0,
+            "time": 12
+        },
+        {
+            "opponent": "Maria",
+            "winner": "Connor",
+            "my_score": 0,
+            "enemy_score": 0,
+            "time": 20
+        },
+        {
+            "opponent": "Maria",
+            "winner": "Connor",
+            "my_score": 0,
+            "enemy_score": 80,
+            "time": 18
+        }
+    ],
+    "null": [
+        {
+            "opponent": "Q",
+            "winner": "Draw",
+            "my_score": 0,
+            "enemy_score": 0,
+            "time": 180
+        }
+    ],
+    "Maria": [
+        {
+            "opponent": "Reva",
+            "winner": "Reva",
+            "my_score": 0,
+            "enemy_score": 0,
+            "time": 7
+        },
+        {
+            "opponent": "Reva",
+            "winner": "Maria",
+            "my_score": 160,
+            "enemy_score": 0,
+            "time": 180
+        },
+        {
+            "opponent": "Reva",
+            "winner": "Maria",
+            "my_score": 120,
+            "enemy_score": 0,
+            "time": 180
+        },
+        {
+            "opponent": "Reva",
+            "winner": "Maria",
+            "my_score": 120,
+            "enemy_score": 0,
+            "time": 180
+        },
+        {
+            "opponent": "Reva",
+            "winner": "Draw",
+            "my_score": 0,
+            "enemy_score": 0,
+            "time": 180
+        },
+        {
+            "opponent": "Reva",
+            "winner": "Draw",
+            "my_score": 0,
+            "enemy_score": 0,
+            "time": 180
+        }
+    ],
+    "Reva": [
+        {
+            "opponent": "Maria",
+            "winner": "Reva",
+            "my_score": 0,
+            "enemy_score": 0,
+            "time": 7
+        },
+        {
+            "opponent": "Maria",
+            "winner": "Maria",
+            "my_score": 0,
+            "enemy_score": 160,
+            "time": 180
+        },
+        {
+            "opponent": "Maria",
+            "winner": "Maria",
+            "my_score": 0,
+            "enemy_score": 120,
+            "time": 180
+        },
+        {
+            "opponent": "Maria",
+            "winner": "Maria",
+            "my_score": 0,
+            "enemy_score": 120,
+            "time": 180
+        },
+        {
+            "opponent": "Maria",
+            "winner": "Draw",
+            "my_score": 0,
+            "enemy_score": 0,
+            "time": 180
+        },
+        {
+            "opponent": "Maria",
+            "winner": "Draw",
+            "my_score": 0,
+            "enemy_score": 0,
+            "time": 180
+        }
+    ]
+}
