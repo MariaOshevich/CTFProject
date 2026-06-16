@@ -874,7 +874,7 @@ class Client:
         self.menu_frame.place(x=0, y=0, relwidth=1)
 
         self.menu_title_label = Label(self.menu_frame, fg="white", bg="#0f172a", font=("Consolas", 24, "bold"))
-        self.menu_title_label.place(relx=0.12, rely=0.5, anchor=CENTER)
+        self.menu_title_label.place(relx=0.1, rely=0.5, anchor=CENTER)
 
         # MENU FRAMES
 
@@ -903,19 +903,19 @@ class Client:
 
         # Top navigation menu buttons
         Button(self.menu_frame, text="About", width=12, font=("Consolas", 15, "bold"), fg="white", bg="#0f172a",
-               command=lambda: self.show_frame(About)).place(relx=0.4, y=50, anchor=CENTER)
+               command=lambda: self.show_frame(About)).place(relx=0.35, y=50, anchor=CENTER)
         Button(self.menu_frame, text="Learn", width=12, font=("Consolas", 15, "bold"), fg="white", bg="#0f172a",
-               command=lambda: self.show_frame(Learn)).place(relx=0.5, y=50, anchor=CENTER)
+               command=lambda: self.show_frame(Learn)).place(relx=0.45, y=50, anchor=CENTER)
         Button(self.menu_frame, text="Challenges", width=12, font=("Consolas", 15, "bold"), fg="white", bg="#0f172a",
-               command=lambda: self.show_frame(Challenges)).place(relx=0.6, y=50, anchor=CENTER)
+               command=lambda: self.show_frame(Challenges)).place(relx=0.55, y=50, anchor=CENTER)
         Button(self.menu_frame, text="Scoreboard", width=12, font=("Consolas", 15, "bold"), fg="white", bg="#0f172a",
-               command=lambda: self.show_frame(Scoreboard)).place(relx=0.7, y=50, anchor=CENTER)
+               command=lambda: self.show_frame(Scoreboard)).place(relx=0.65, y=50, anchor=CENTER)
         Button(self.menu_frame, text="History", width=12, font=("Consolas", 15, "bold"), fg="white", bg="#0f172a",
-               command=lambda: self.show_frame(History)).place(relx=0.8, y=50, anchor=CENTER)
+               command=lambda: self.show_frame(History)).place(relx=0.75, y=50, anchor=CENTER)
         Button(self.menu_frame, text="Profile", width=12, font=("Consolas", 15, "bold"), fg="white", bg="#0f172a",
-               command=lambda: self.toggle_profile()).place(x=1400, y=50, anchor=CENTER)
+               command=lambda: self.toggle_profile()).place(relx=0.9, y=50, anchor=CENTER)
         Button(self.menu_frame, text="Start", width=12, font=("Consolas", 15, "bold"), fg="white", bg="#0f172a",
-               command=lambda: self.show_frame(Start)).place(relx=0.3, y=50, anchor=CENTER)
+               command=lambda: self.show_frame(Start)).place(relx=0.25, y=50, anchor=CENTER)
 
         # PROFILE SECTION
 
@@ -953,47 +953,117 @@ class Client:
 
         # LEARN SECTION
 
-        # Create Text widget
-        text_widget = Text(learn_content, font=("Consolas", 12), fg="white", bg="black",
-                           wrap="word", width=120, bd=0, highlightthickness=0)
-        text_widget.pack(anchor="nw", padx=50, pady=50)
+        learn_container = Frame(learn_content, bg="black")
+        learn_container.pack(fill="both", expand=True, padx=50)
 
-        # Read the file and split it into lines (or paragraphs)
-        with open("learn.txt", "r", encoding="utf-8") as file:
-            lines = file.readlines()
+        # TITLE / BUTTONS AREA
 
-        # Image processing
+        title = Label(
+            learn_container,
+            text="CTF TRAINING",
+            font=("Consolas", 26, "bold"),
+            fg="white",
+            bg="black"
+        )
+        title.pack(pady=30)
+
+        # LOAD IMAGE
+
         try:
             pil_img = Image.open("pictures/Example_code1.PNG")
-            width_size = 600
-            w_percent = (width_size / float(pil_img.size[0]))
-            h_size = int((float(pil_img.size[1]) * float(w_percent)))
+
+            width_size = 800
+            w_percent = width_size / float(pil_img.size[0])
+            h_size = int(float(pil_img.size[1]) * w_percent)
+
             pil_img = pil_img.resize((width_size, h_size), Image.Resampling.LANCZOS)
 
             learn_image_tk = ImageTk.PhotoImage(pil_img)
 
-            text_widget.image_ref = learn_image_tk
-
-        except FileNotFoundError:
-            print("Error: Could not find image file 'Example_code1.PNG'")
-            learn_image_tk = None
         except Exception as e:
-            print(f"An error occurred while loading the image: {e}")
+            print("Image load error:", e)
             learn_image_tk = None
 
-        # Insert text and image conditionally
-        # Insert the image after the 5th line of text
-        for index, line in enumerate(lines):
-            text_widget.insert(END, line)
+        # READ FILE
 
-            if index == 4:
-                if learn_image_tk:
-                    text_widget.insert(END, "\n")
-                    text_widget.image_create(END, image=learn_image_tk)
-                    text_widget.insert(END, "\n\n")
+        with open("learn.txt", "r", encoding="utf-8") as file:
+            lines = file.readlines()
 
-        # Make the text widget read-only
-        text_widget.config(state=DISABLED)
+        # RENDER CONTENT (TEXT + IMAGE)
+
+        for i, line in enumerate(lines):
+
+            label = Label(
+                learn_container,
+                text=line.strip(),
+                font=("Consolas", 14),
+                fg="white",
+                bg="black",
+                anchor="w",
+                wraplength=1200
+            )
+            label.pack(pady=2, anchor="w")
+
+            # вставка картинки после строки 32
+            if i == 32 and learn_image_tk:
+                img_label = Label(
+                    learn_container,
+                    image=learn_image_tk,
+                    bg="black"
+                )
+                img_label.image = learn_image_tk
+                img_label.pack(pady=40)
+
+        # TOOLS BLOCK
+
+        tools_box = Frame(learn_container, bg="#2f2f2f")
+
+        Button(
+            tools_box,
+            text="ASCII Table",
+            font=("Consolas", 15, "bold"),
+            fg="white",
+            bg="black",
+            command=lambda: webbrowser.open("https://ascii.co.uk/info")
+        ).pack(pady=5)
+
+        Button(
+            tools_box,
+            text="CyberChef",
+            font=("Consolas", 15, "bold"),
+            fg="white",
+            bg="black",
+            command=lambda: webbrowser.open("https://gchq.github.io/CyberChef/")
+        ).pack(pady=5)
+
+        Button(
+            tools_box,
+            text="XOR Calculator",
+            font=("Consolas", 15, "bold"),
+            fg="white",
+            bg="black",
+            command=lambda: webbrowser.open("https://xor.pw/#")
+        ).pack(pady=5)
+
+        Button(
+            tools_box,
+            text="Python Tutor",
+            font=("Consolas", 15, "bold"),
+            fg="white",
+            bg="black",
+            command=lambda: webbrowser.open("https://pythontutor.com/visualize.html")
+        ).pack(pady=5)
+
+        Button(
+            tools_box,
+            text="Python Docs",
+            font=("Consolas", 15, "bold"),
+            fg="white",
+            bg="black",
+            command=lambda: webbrowser.open("https://docs.python.org/3/")
+        ).pack(pady=5)
+
+        tools_box.pack(pady=50, padx=100, fill="x")
 
         # SCOREBOARD SECTION
 

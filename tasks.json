@@ -12,8 +12,7 @@
             "CTF_task0.zip"
         ],
         "flag_hash": "6889250a932ee253f103d29808a06eb713f29e8decafb64aec1570da1991e621",
-        "flag_salt": "9f3a7c1d4e8b2a6f5c9d1e7b3a8f4c2d",
-        "temporary_note": "FLAG{hidden_message}"
+        "flag_salt": "9f3a7c1d4e8b2a6f5c9d1e7b3a8f4c2d"
     
     },
     {
@@ -29,8 +28,7 @@
             "CTF_task1.zip"
         ],
         "flag_hash": "e32d79375ef294a1fb5c0b422af2577c5778647a62da5bd447fd46b103a77d44",
-        "flag_salt": "c1d4e7a9f2b6c8d3e5a1f7b9c2d4e6a8",
-        "temporary_note": "f1rst_FLAG"
+        "flag_salt": "c1d4e7a9f2b6c8d3e5a1f7b9c2d4e6a8"
     },
     {
         "id": 2,
@@ -45,8 +43,7 @@
             "CTF_task2.zip"
         ],
         "flag_hash": "7dad346d70ffd3a963f4c3ae8c96b047d0cf7a64ec727dd929e081a889c1bb7b",
-        "flag_salt": "7b2c9f4a1d6e8c3b5f7a9d2e4c6b8f1a",
-        "temporary_note": "PYTH-1337-CR4K"
+        "flag_salt": "7b2c9f4a1d6e8c3b5f7a9d2e4c6b8f1a"
     },
     {
         "id": 3,
@@ -61,8 +58,7 @@
             "CTF_task3.zip"
         ],
         "flag_hash": "789cba11a27e2f21a4fa8bb9162a452d75504e3e48f6dd87887243afa5f4af3d",
-        "flag_salt": "e3a8c1f7b4d9a2c6e5f1b7d3c8a4e6f9",
-        "temporary_note": "333gogog0gog0g0g0"
+        "flag_salt": "e3a8c1f7b4d9a2c6e5f1b7d3c8a4e6f9"
     },
     {
         "id": 4,
@@ -77,8 +73,7 @@
             "CTF_task4.zip"
         ],
         "flag_hash": "ba1aa1f364b45682e5ec5263edd027cf181e576411a73331644b6299207beaf7",
-        "flag_salt": "b8f1c3a7d9e2f4b6c1a5e7d3f9c2b8a4",
-        "temporary_note": "f1fth_is_s0lVd"
+        "flag_salt": "b8f1c3a7d9e2f4b6c1a5e7d3f9c2b8a4"
     },
     {
         "id": 5,
@@ -93,40 +88,37 @@
             "CTF_task5.zip"
         ],
         "flag_hash": "7b625dbfeafffd828d9af7a5612a3674995fff6be00b954c2725bce4e6bab462",
-        "flag_salt": "d6c2a9f1e4b7c8a3f5d9e1b6c4a7f2d8",
-        "temporary_note": "F1nal_flag"
+        "flag_salt": "d6c2a9f1e4b7c8a3f5d9e1b6c4a7f2d8"
     },
     {
         "id": 6,
         "title": "Serial-6",
-        "difficulty": "Easy",
+        "difficulty": "Medium",
         "type": "Reverse",
-        "points": 40,
-        "reduced_points": 30,
-        "solves": 25,
-        "description": "Find the hidden flag in the binary.",
+        "points": 80,
+        "reduced_points": 60,
+        "solves": 0,
+        "description": "Find the hidden flag in the code.",
         "files": [
             "CTF_task6.zip"
         ],
-        "flag_hash": "b1886fd2262337efba30ae8dcd8d460944df345cb23b6cae1f7103b7669ea35d",
-        "flag_salt": "a4b7c1d3e9f2a6b8c4d7e1f3a5b2c8d4",
-        "temporary_note": "HELLO_CTF"
+        "flag_hash": "db05644fc3c9d0dd057ecdc5054d9530daec5d1845c33ce677be4d681607500b",
+        "flag_salt": "f2a6d8c1b4e7f9a3c5d1b8e6f4a2c9d7"
     },
     {
         "id": 7,
         "title": "Split-7",
         "difficulty": "Easy",
-        "type": "Encoding",
+        "type": "Reverse",
         "points": 40,
         "reduced_points": 30,
-        "solves": 14,
+        "solves": 0,
         "description": "Find the hidden flag in the code.",
         "files": [
             "CTF_task7.zip"
         ],
-        "flag_hash": "b1886fd2262337efba30ae8dcd8d460944df345cb23b6cae1f7103b7669ea35d",
-        "flag_salt": "a4b7c1d3e9f2a6b8c4d7e1f3a5b2c8d4",
-        "temporary_note": "FLAG123XYZ"
+        "flag_hash": "b432b7eb257a8e8ee7f0f79b81a5a56d96d5ca756ba3f5d1b344a71aeb9200d3",
+        "flag_salt": "a9c3e7b1f4d8a6c2e5f9b7d1a4c6e8f2"
     },
     {
         "id": 8,
@@ -141,7 +133,8 @@
             "CTF_task8.zip"
         ],
         "flag": "MicCheck_h4x",
-        "temporary_note": "MicCheck_h4x"
+        "flag_hash": "f98b7fe15fea8898fb0ced6dca71e313ab86176a360e54afdc5b88e7c1c6663f",
+        "flag_salt": "c7b1f9d3a6e8c4b2f5d9a1e7c3f6b8d4"
     },
     {
         "id": 9,
@@ -155,9 +148,8 @@
         "files": [
             "CTF_task9.zip"
         ],
-        "flag_hash": "b1886fd2262337efba30ae8dcd8d460944df345cb23b6cae1f7103b7669ea35d",
-        "flag_salt": "a4b7c1d3e9f2a6b8c4d7e1f3a5b2c8d4",
-        "temporary_note": "APAFA"
+        "flag_hash": "33cfff169a4175f85442d38b7b06f0d9722d4c3f2c1b43725ae8333c82bc36e4",
+        "flag_salt": "e1f4c6a9b2d8f7c3a5e9b1d6f2c8a4e7"
     },
     {
         "id": 10,
@@ -171,23 +163,23 @@
         "files": [
             "CTF_task10.zip"
         ],
-        "flag": "4_pointskomne"
+        "flag_hash": "64381d52b15a2403111c483235ade38746329cae3c65f08f99c32871653732a5",
+        "flag_salt": "b3d9a1c6f4e8b2d7a5c1f9e3b6d8c2a7"
     },
     {
         "id": 11,
         "title": "XORSerial-11",
-        "difficulty": "Easy",
+        "difficulty": "Medium",
         "type": "Reverse",
-        "points": 40,
-        "reduced_points": 30,
+        "points": 80,
+        "reduced_points": 60,
         "solves": 24,
         "description": "Find the hidden flag in the code.",
         "files": [
             "CTF_task11.zip"
         ],
-        "flag_hash": "b1886fd2262337efba30ae8dcd8d460944df345cb23b6cae1f7103b7669ea35d",
-        "flag_salt": "a4b7c1d3e9f2a6b8c4d7e1f3a5b2c8d4",
-        "temporary_note": "F1ag6767"
+        "flag_hash": "41afab76d3112967fbb4a5c85ee689c41d40c54bc1537b0ce0d0f89b73aa619d",
+        "flag_salt": "f6c8a2e1d4b7c9f3a5e2b8d1c6f9a4e7"
     },
     {
         "id": 12,
@@ -201,25 +193,23 @@
         "files": [
             "CTF_task12.zip"
         ],
-        "flag_hash": "b1886fd2262337efba30ae8dcd8d460944df345cb23b6cae1f7103b7669ea35d",
-        "flag_salt": "a4b7c1d3e9f2a6b8c4d7e1f3a5b2c8d4",
-        "temporary_note": "DECODE_THIS_HIDDEN_F%laG_8642"
+        "flag_hash": "3c62d339bb22699ad747d96b719510473e2ff0ab1fe33e30c3576368586241e2",
+        "flag_salt": "a2d7f1c4b9e6a3c8f5d1b7e4c2a9f8d3"
     },
     {
         "id": 13,
-        "title": "",
+        "title": "Task-13",
         "difficulty": "Medium",
         "type": "Reverse",
         "points": 80,
         "reduced_points": 60,
         "solves": 12,
-        "description": "Find the hidden flag in the binary.",
+        "description": "Find the hidden flag in the code.",
         "files": [
             "CTF_task13.zip"
         ],
-        "flag_hash": "b1886fd2262337efba30ae8dcd8d460944df345cb23b6cae1f7103b7669ea35d",
-        "flag_salt": "a4b7c1d3e9f2a6b8c4d7e1f3a5b2c8d4",
-        "temporary_note": "PICOCTF"
+        "flag_hash": "e24c2f9b211fafc9e49535ad7713ad7db41734f3158d7e2882ca94c771466c28",
+        "flag_salt": "d9a4c2f7e1b6a8d3c5f9e2b1c7d4a6f8"
     },
     {
         "id": 14,
@@ -233,9 +223,8 @@
         "files": [
             "CTF_task14.zip"
         ],
-        "flag_hash": "b1886fd2262337efba30ae8dcd8d460944df345cb23b6cae1f7103b7669ea35d",
-        "flag_salt": "a4b7c1d3e9f2a6b8c4d7e1f3a5b2c8d4",
-        "temporary_notes": "Lx]7!Gn!"
+        "flag_hash": "7d7c2098caf4c05c24e6f34f2b809c73bb0a77dfa9d896ac3b92ac0d62947da9",
+        "flag_salt": "c4f1a7d9b2e6c8a3f5d1c7b8e4a2f9d6"
     },
     {
         "id": 15,
@@ -249,9 +238,8 @@
         "files": [
             "CTF_task15.zip"
         ],
-        "flag_hash": "b1886fd2262337efba30ae8dcd8d460944df345cb23b6cae1f7103b7669ea35d",
-        "flag_salt": "a4b7c1d3e9f2a6b8c4d7e1f3a5b2c8d4",
-        "temporary_note": "C0d3_X0R1990"
+        "flag_hash": "9d106a2abf4432e2fae2e6e29205bb30cdbd703d688d02ef6c3006217b220f42",
+        "flag_salt": "e7b5c1f9a4d8c2e6b3f7a1d5c9b8e2f4"
     },
     {
         "id": 16,
@@ -265,26 +253,24 @@
         "files": [
             "CTF_task16.zip"
         ],
-        "flag_hash": "b1886fd2262337efba30ae8dcd8d460944df345cb23b6cae1f7103b7669ea35d",
-        "flag_salt": "a4b7c1d3e9f2a6b8c4d7e1f3a5b2c8d4",
-        "temporary_notes": "RE1&-eSL^-CR4K"
+        "flag_hash": "a4ae4617d0f0d97115173636ec97398b4eed42a38dbe6b34a045a648af4d05fa",
+        "flag_salt": "b1c8e4f2a6d9c3f7b5a2e8d1c6f4a9b7"
 
     },
     {
         "id": 17,
         "title": "tAsK-17",
         "difficulty": "Medium",
-        "type": "Crypto",
+        "type": "Reverse",
         "points": 80,
         "reduced_points": 60,
         "solves": 39,
-        "description": "Find the hidden flag in the binary.",
+        "description": "Find the hidden flag in the code.",
         "files": [
             "CTF_task17.zip"
         ],
-        "flag_hash": "b1886fd2262337efba30ae8dcd8d460944df345cb23b6cae1f7103b7669ea35d",
-        "flag_salt": "a4b7c1d3e9f2a6b8c4d7e1f3a5b2c8d4",
-        "temporary_notes": "FlaG-hERE"
+        "flag_hash": "329885ecb9011ec0fcbaa1072fbb3d29fab8df029e978c4e917efe8ae46512a1",
+        "flag_salt": "f9a6c3d1e8b2f7c4a5d9e1b6c8f2a3d7"
     },
     {
         "id": 18,
@@ -294,28 +280,26 @@
         "points": 80,
         "reduced_points": 60,
         "solves": 13,
-        "description": "Find the hidden flag in the binary.",
+        "description": "Find the hidden flag in the code.",
         "files": [
             "CTF_task18.zip"
         ],
-        "flag_hash": "b1886fd2262337efba30ae8dcd8d460944df345cb23b6cae1f7103b7669ea35d",
-        "flag_salt": "a4b7c1d3e9f2a6b8c4d7e1f3a5b2c8d4",
-        "temporary_notes": "BEIBOWJ?2CNC"
+        "flag_hash": "96cef517a1a84888461f76b9def692c8917f4d48c0c48ddec3da8ad92048d390",
+        "flag_salt": "d3f8a1c7e4b9d2f6a5c1e8b7d4a9c2f5"
     },
     {
         "id": 19,
-        "title": "Third task",
-        "difficulty": "Medium",
-        "type": "Forensics",
+        "title": "Task-19",
+        "difficulty": "Easy",
+        "type": "Reverse",
         "points": 80,
         "reduced_points": 60,
         "solves": 61,
-        "description": "Find the hidden flag in the binary.",
+        "description": "Find the hidden flag in the code.",
         "files": [
             "CTF_task19.zip"
         ],
-        "flag_hash": "b1886fd2262337efba30ae8dcd8d460944df345cb23b6cae1f7103b7669ea35d",
-        "flag_salt": "a4b7c1d3e9f2a6b8c4d7e1f3a5b2c8d4",
-        "temporary_notes": "CTFr0r0!"
+        "flag_hash": "30d4423a4884c9b44add796c5b1f5f27a958d577c405ee2581187e6267c52f50",
+        "flag_salt": "c5a9f2d7e1b4c8a3f6d9e2b7c1a4f8d5"
     }
 ]

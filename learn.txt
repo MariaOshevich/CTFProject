@@ -1,28 +1,534 @@
+CTF TRAINING
+
 What is CTF (Capture The Flag)
 
-CTF (Capture The Flag) is a cybersecurity competition format in which participants solve technical tasks related to code analysis, hacking, cryptography, networking, and vulnerability discovery. The main goal is to find a special secret string called a “flag.” For each found flag, the team or player receives points. The winner is the one who scores the most points within a given time.
+CTF (Capture The Flag) is a cybersecurity competition format in which participants solve technical challenges related to code analysis, hacking, cryptography, networking, and vulnerability discovery.
 
-The name Capture The Flag comes from the traditional team game of the same name. In the physical game, teams try to steal the opponent’s flag while defending their own. In cybersecurity, the principle is similar: instead of a real flag, a hidden string is used, such as:
+The main goal is to find a special secret string called a "flag". For each flag found, a team or player receives points. The winner is the participant or team that scores the most points within a specified time.
+
+The name Capture The Flag comes from the traditional team game of the same name. In the original game, teams try to steal the opponent's flag while protecting their own. In cybersecurity, the principle is similar: instead of a physical flag, participants search for a hidden string such as:
 
 flag{example_of_flag}
 
-To obtain this flag, participants must investigate a program, file, website, network service, or system and find a way to extract hidden data.
+To obtain this flag, a participant must investigate a program, file, website, network service, or system and find a way to extract the hidden data.
 
 Types of CTF Challenges
 
-CTF includes many types of tasks. The most common categories are:
+CTFs contain many different categories of challenges. The most common ones are:
 
-• Reverse Engineering (code and program analysis)
-• Encoding / Cryptography (encoding and encryption)
-• Forensics (file analysis and digital traces)
-• Networking (network-based tasks)
-• OSINT (open-source intelligence gathering)
+• Reverse Engineering (program and code analysis)
+• Encoding / Cryptography (encodings and ciphers)
+• Forensics (file and digital evidence analysis)
+• Networking (network-related challenges)
+• OSINT (Open Source Intelligence)
 
-In each challenge, a flag is hidden. To retrieve it, players analyze code, look for errors, decode data, or study program behavior.
+Each challenge contains a hidden flag. To obtain it, the player analyzes code, searches for vulnerabilities, decodes data, or studies the behavior of a program.
 
-In my project, I provide users with the ability to solve two types of tasks: Reverse (code analysis) and Encoding / Cryptography (encoding and encryption).
+In my project, users can solve two types of challenges:
+
+• Reverse Engineering (code analysis)
+• Encoding / Cryptography (encodings and ciphers)
 
 Example of a Simple CTF Challenge
 
-A player receives the following Python code:
+The player receives the following Python code:
 
+def check_flag(flag):
+secret = [116, 104, 105, 115, 95, 105, 115, 95, 116, 104, 101, 95, 102, 108, 97, 103]
+
+```
+if len(flag) != len(secret):
+    return False
+
+for i in range(len(secret)):
+    if ord(flag[i]) != secret[i]:
+        return False
+
+return True
+```
+
+flag = input("Enter flag: ")
+
+if check_flag(flag):
+print("Correct!")
+else:
+print("Wrong flag :(")
+
+Challenge Description
+
+We have hidden a flag inside the program. Find the correct flag.
+
+How to Solve It
+
+The player analyzes the code and notices the line:
+
+secret = [116, 104, 105, 115, ...]
+
+They then see the validation:
+
+ord(flag[i]) != secret[i]
+
+The ord() function converts a character into its ASCII code. Therefore, the numbers in the list represent the ASCII values of the flag characters.
+
+The player can write a decoder:
+
+print("".join(chr(x) for x in [116, 104, 105, 115, 95, 105, 115, 95, 116, 104, 101, 95, 102, 108, 97, 103]))
+
+or use an online decoder provided in the game's reference materials.
+
+What You Should Know Before Starting
+
+To solve even simple CTF challenges, it is recommended to understand the basics of Python.
+
+You should know:
+
+• How strings work
+• Loops and conditions
+• Lists
+• Functions
+• Basic text and number operations
+
+Without this knowledge, analyzing code and writing your own scripts becomes significantly more difficult.
+
+Reverse Engineering
+
+What is Reverse Engineering
+
+Reverse Engineering (often called "reverse") is the process of analyzing a program or code to understand how it works.
+
+In this type of challenge, participants are given a program, script, or file containing a hidden flag.
+
+The player must investigate the program's logic and determine:
+
+• Where the flag is stored
+• How the validation works
+• What input the program expects
+• Whether the protection can be bypassed
+
+Reverse Engineering challenges are very popular in CTF competitions because they teach participants how to read and understand other people's code.
+
+What You Need to Know for Reverse Challenges
+
+Many Encoding, Reverse Engineering, and Python Basics challenges require understanding basic string operations.
+
+Very often, flags are split into parts, reversed, encoded character by character, or validated using mathematical operations.
+
+Working with Strings
+
+A string is a sequence of characters.
+
+Example:
+
+flag = "flag{hello}"
+
+Each character has its own index.
+
+f l a g { h e l l o }
+0 1 2 3 4 5 6 7 8 9 10
+
+To access a character, use its index.
+
+Example:
+
+flag[0]
+
+Result:
+
+f
+
+flag[5]
+
+Result:
+
+h
+
+Slices
+
+A slice allows you to obtain part of a string.
+
+General syntax:
+
+string[start:end]
+
+The character at the end index is not included.
+
+First 8 Characters
+
+flag[:8]
+
+Equivalent to:
+
+flag[0:8]
+
+Example:
+
+text = "HelloWorld"
+
+text[:5]
+
+Result:
+
+Hello
+
+Everything After the Eighth Character
+
+flag[8:]
+
+Example:
+
+text = "HelloWorld"
+
+text[5:]
+
+Result:
+
+World
+
+Getting the Middle Part of a String
+
+flag[4:8]
+
+Example:
+
+text = "HelloWorld"
+
+text[2:7]
+
+Result:
+
+lloWo
+
+Negative Indices
+
+You can count from the end of the string.
+
+H e l l o
+-5 -4 -3 -2 -1
+
+Last Character:
+
+text[-1]
+
+Result:
+
+o
+
+Second-to-Last Character:
+
+text[-2]
+
+Result:
+
+l
+
+Reversing a String
+
+This appears very frequently in CTF challenges.
+
+flag[::-1]
+
+Example:
+
+text = "hello"
+
+text[::-1]
+
+Result:
+
+olleh
+
+Splitting a String
+
+The split() method divides a string into parts.
+
+Example:
+
+text = "apple,banana,orange"
+
+text.split(",")
+
+Result:
+
+['apple', 'banana', 'orange']
+
+Example Reverse Challenge
+
+flag = input("Enter flag: ")
+
+encrypted = ""
+
+for char in flag:
+encrypted += chr(ord(char) + 1)
+
+if encrypted == "ifmmp":
+print("Correct!")
+else:
+print("Wrong!")
+
+Challenge Description
+
+Find the flag hidden in the code.
+
+Solution
+
+The player notices that the program:
+
+1. Takes each character
+2. Converts it to its ASCII code using ord()
+3. Adds 1
+4. Converts it back to a character using chr()
+
+This means the program shifts every character forward by one.
+
+The string:
+
+ifmmp
+
+After shifting each character backward by one becomes:
+
+hello
+
+Therefore, the correct flag is:
+
+hello
+
+Encoding
+
+What is Encoding
+
+Encoding challenges involve text encodings, data transformations, and simple methods of representing information.
+
+Typically, the player receives a string of unfamiliar characters, text, or a file and must determine how the data was encoded and recover the original content.
+
+Unlike advanced cryptography, encoding challenges usually test attention to detail and familiarity with common encoding formats.
+
+What You Need to Know for Encoding Challenges
+
+An encoding is a way of representing data in a different format.
+
+For example:
+
+Text:
+
+Hello
+
+can be encoded as Base64:
+
+SGVsbG8=
+
+or as HEX:
+
+48656c6c6f
+
+Encoding is not designed to protect information. Its primary purpose is convenient storage and transmission of data.
+
+Most Common Encodings
+
+Base64
+
+Uses the characters:
+
+A-Z
+a-z
+0-9
++
+/
+=
+
+Example:
+
+SGVsbG8gd29ybGQ=
+
+Decoded:
+
+Hello world
+
+How to Recognize It
+
+• Contains uppercase and lowercase letters
+• Often ends with "="
+• Usually contains no special characters except "+" and "/"
+
+Base32
+
+Uses the characters:
+
+A-Z
+2-7
+===
+
+Example:
+
+JBSWY3DPEBLW64TMMQ======
+
+Decoded:
+
+Hello
+
+How to Recognize It
+
+• Only uppercase letters
+• Uses digits 2 through 7
+• Often contains many "=" characters
+
+Base16 (HEX)
+
+Uses the characters:
+
+0-9
+a-f
+
+Example:
+
+48656c6c6f
+
+Decoded:
+
+Hello
+
+How to Recognize It
+
+If the string contains only these characters, it is very likely HEX:
+
+0123456789abcdef
+
+Binary
+
+Binary is a way of representing data using only two symbols:
+
+0 and 1
+
+Computers store all information in binary form.
+
+Binary and HEX are not different encodings. They are different numeral systems used to represent the same value.
+
+For example, the number 65 can be written as:
+
+Decimal: 65
+Binary: 01000001
+HEX: 41
+
+All three representations refer to the same value.
+
+To convert numbers between numeral systems, you can use the Programmer calculator built into Windows.
+
+ASCII Table
+
+ASCII is a character encoding standard that assigns a numeric code to every character that a computer can use.
+
+ASCII table reference:
+[https://ascii.co.uk/info](https://ascii.co.uk/info)
+
+Why Is ASCII Needed?
+
+Computers do not understand letters, numbers, and symbols directly. They only work with numbers.
+
+When a person writes:
+
+Hello
+
+the computer sees something similar to:
+
+72 101 108 108 111
+
+Each number corresponds to a specific character according to the ASCII table.
+
+Without ASCII, computers would not know which character should be displayed on the screen or stored in a file.
+
+How the ASCII Table Works
+
+Each character is assigned a number from 0 to 127.
+
+Examples:
+
+Character A - 65
+Character B - 66
+Character C - 67
+
+How ASCII Is Stored in Memory
+
+Consider the character:
+
+A
+
+ASCII code:
+
+65
+
+Binary representation:
+
+01000001
+
+HEX representation:
+
+41
+
+All of these represent the same character.
+
+ASCII and Python
+
+The most common functions for working with ASCII are ord() and chr().
+
+ord() returns the ASCII code of a character.
+
+Examples:
+
+ord("A") == 65
+ord("B") == 66
+ord("C") == 67
+
+chr() converts an ASCII code back into a character.
+
+Examples:
+
+chr(65) == "A"
+chr(97) == "a"
+
+Comparing Characters Using ASCII
+
+When a program compares:
+
+"A" < "B"
+
+it is actually comparing:
+
+65 < 66
+
+Therefore, the result is:
+
+True
+
+Example Encoding Challenge
+
+The player receives the string:
+
+UHl0aG9uX2lzX2Z1bg==
+
+Solution
+
+Based on the characters used and the "==" at the end, the player can recognize that it is Base64.
+
+After decoding, the result is:
+
+Python_is_fun
+
+This is the flag.
+
+It is important to note that many challenges on this platform combine both Reverse Engineering and Encoding techniques.
+
+Tools and Reference Materials
+
+What Should Be Installed on the Player's Computer
+
+• Python — for writing decoders and automation scripts
+• VS Code or PyCharm — for working with code
+
+Additionally, the platform provides several tools:
+
+• CyberChef — an online tool for decoding and analysis
+• ASCII Table
+• XOR Calculator
+
+It is also extremely important to know how to search for information online and read documentation.
+
+In CTF competitions, it is impossible to know everything. The ability to quickly find the necessary information is one of the most important skills a participant can develop.
